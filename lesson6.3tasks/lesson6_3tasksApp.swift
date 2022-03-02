@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct lesson6_3tasksApp: App {
+    let settings = UserSettings()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreen()
+                .environmentObject(settings)
         }
     }
 }
